@@ -1,86 +1,246 @@
+/* 
+Colors:
+	dark purple: #542584
+	light pruple: #5E2697;
+	*/
 
-body {
-	font-family: 'Open Sans', sans-serif;
-}
+	body {
+		font-family: 'Open Sans', sans-serif;
+	}
 
-.material-icons.md-60 { font-size: 60px; }
+	.material-icons.md-60 { 
+	/*next/previous in slider*/
+		font-size: 60px; 
+	}
 
-#play-left{
-	-ms-transform: scaleX(-1); /* IE 9 */
-	-webkit-transform: scaleX(-1); /* Safari 3-8 */
-	transform: scaleX(-1);
-}
+	#play-left{
+		-ms-transform: scaleX(-1); /* IE 9 */
+		-webkit-transform: scaleX(-1); /* Safari 3-8 */
+		transform: scaleX(-1);
+	}
 
-.cont-caption {
-	border: 2px solid red;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
+	.cont-caption {
+		border: 2px solid red;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
 
-}
+	}
 
-.cont-item {
-	border: 2px solid blue;
-}
+	.cont-item {
+		border: 2px solid blue;
+	}
 
-.carousel-caption {
-	border: 1px solid yellow;
-	top: 50%;
-	transform: translateY(-50%);
-	-ms-transform: scaleX(-50%); /* IE 9 */
-	-webkit-transform: scaleX(-50%); /* Safari 3-8 */
-}
-
-
-.navbar-container{
-	border: 1px solid red;
-	top: 50px;
-	display: block;
-	position: absolute;
-	width: 100%;
-	z-index: 20; /*pasarlo al nav*/
-	font-size: 0.85rem;
-
-}
+	.carousel-caption {
+		border: 1px solid yellow;
+		top: 50%;
+		transform: translateY(-50%);
+		-ms-transform: scaleX(-50%); /* IE 9 */
+		-webkit-transform: scaleX(-50%); /* Safari 3-8 */
+	}
 
 
-.btn-nav{
-	/*btns top and bottom in header*/
-	width: 150px;
-	margin-left: 30px;
-	font-size: 0.85rem;
-}
+	.navbar-container{
+		border: 1px solid red;
+		top: 50px;
+		display: block;
+		position: absolute;
+		width: 100%;
+		z-index: 20; /*pasarlo al nav*/
+		font-size: 0.85rem;
 
-.link-pages{
-	/*links to pages 1-2-3 in header*/
-	/*border: 2px solid red ;*/
-
-	margin-left: 35px;
-	color: #f8f9fa; /*bootstrap light color*/
-
-}
+	}
 
 
-.link-pages:hover{	
-	color: #b2b6ba; /*From Bootstrap */
+	.btn-nav{
+		/*btns top and bottom in header*/
+		width: 150px;
+		margin-left: 30px;
+		font-size: 0.85rem;
+	}
 
-}
+	.link-pages{
+		/*links to pages 1-2-3 in header*/
+		/*border: 2px solid red ;*/
 
-.gobottom-container{
-	border: 1px solid green;
-	position: absolute;
-	bottom: 50px;
-	width: 100%;
-	text-align: center;
-	z-index: 20; /*Pasarlo al hijo*/
-}
+		margin-left: 35px;
+		color: #f8f9fa; /*bootstrap light color*/
 
-.gobottom-container a {
-	padding: .8rem 3rem; /*Bootstrap overwrite*/
-	color: white;
-	background-color: rgb(71, 48, 161);
-	font-size: 0.9rem;
-	font-weight: bold;
-}
+	}
+
+
+	.link-pages:hover{	
+		color: #b2b6ba; /*From Bootstrap */
+
+	}
+
+	.gobottom-container{
+		border: 1px solid green;
+		position: absolute;
+		bottom: 50px;
+		width: 100%;
+		text-align: center;
+		z-index: 20; /*Pasarlo al hijo*/
+	}
+
+	.gobottom-container a {
+		padding: .8rem 3rem; /*Bootstrap overwrite*/
+		color: white;
+		background-color: #542584;
+
+		font-size: 0.9rem;
+		font-weight: bold;
+	}
+
+	/* --------section Page 1--------------*/
+
+	section#page1{
+		background-color: #5E2697;
+	}
+
+	.container-page1{
+		/*Allow '.page1-title' has a top-margin with respect to this*/
+		padding: 1px; 
+	}
+
+	.page1-title{
+		border: 1px solid white;
+		margin-top: 100px;
+	}
+
+	.form-page1{
+		border: 1px solid blue;
+		margin-top: 70px;
+	}
+
+	.input-container{
+		border: 1px solid yellow;
+	}
+
+	.custom-dropdown::after {
+		content: "\25BC";
+		color: red;
+	}
+
+
+	.select {
+		/*Combobox from: https://codepen.io/michmy/pen/jBQQpp*/
+		position: relative;
+		display: inline-block;
+		/*margin-bottom: 15px;*/
+		width: 150px;
+		/*border: 1px solid red;*/
+
+	}
+	
+
+	.select-input {
+		/*Combobox from: https://codepen.io/michmy/pen/jBQQpp*/
+
+		display: inline-block;
+		width: 100%;
+		cursor: pointer;
+		padding: 10px 15px;
+		outline: 0;
+		border: 0;
+		border-radius: 0;
+		background: white;
+		color: black;
+		appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		/*from */
+		text-align-last: center;
+		text-align: center;
+		-ms-text-align-last: center;
+		-moz-text-align-last: center;
+		/*added:*/
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+
+		
+	}
+	
+	.select-input::-ms-expand{
+		/*Combobox from: https://codepen.io/michmy/pen/jBQQpp*/
+		display: none;
+	}
+
+	.select-input:hover, .select-input:focus{
+		/*Combobox from: https://codepen.io/michmy/pen/jBQQpp*/
+		color: black;
+		background: white;
+	}
+	
+	.select__arrow{
+		/*Combobox from: https://codepen.io/michmy/pen/jBQQpp*/
+		position: absolute;
+		top: 16px;
+		right: 15px;
+		width: 0;
+		height: 0;
+		pointer-events: none;
+		border-style: solid;
+		border-width: 8px 5px 0 5px;
+		border-color: #542584 transparent transparent transparent;
+	}
+
+	.form-content{
+		border: 3px solid green;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		margin-bottom: 30px;
+
+	}
+
+	option span{
+		text-align: center;
+	}
+
+	.console{
+		background-color: #542584;
+		padding: 10px 35px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+	}
+
+	.console-cont{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	.instructions{
+		border: 2px solid black;
+		margin-top: 25px;
+		font-weight: 300;
+
+	}
+
+	.instructions span{
+		margin-bottom: 10px;
+		display: block;
+	}
+
+	.gobottom-container-pages{
+		border: 1px solid green;
+		/*position: absolute;*/
+		/*bottom: 50px;*/
+		width: 100%;
+		text-align: center;
+		padding-top: 60px;
+		padding-bottom: 50px;  
+	}
+
+	.gobottom-container-pages a {
+		padding: .8rem 3rem; /*Bootstrap overwrite*/
+		color: white;
+		background-color: #542584;
+
+		font-size: 0.9rem;
+		font-weight: bold;
+	}
