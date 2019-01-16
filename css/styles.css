@@ -2,3 +2,85 @@
 body {
 	font-family: 'Open Sans', sans-serif;
 }
+
+.material-icons.md-60 { font-size: 60px; }
+
+#play-left{
+	-ms-transform: scaleX(-1); /* IE 9 */
+	-webkit-transform: scaleX(-1); /* Safari 3-8 */
+	transform: scaleX(-1);
+}
+
+.cont-caption {
+	border: 2px solid red;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+
+}
+
+.cont-item {
+	border: 2px solid blue;
+}
+
+.carousel-caption {
+	border: 1px solid yellow;
+	top: 50%;
+	transform: translateY(-50%);
+	-ms-transform: scaleX(-50%); /* IE 9 */
+	-webkit-transform: scaleX(-50%); /* Safari 3-8 */
+}
+
+
+.navbar-container{
+	border: 1px solid red;
+	top: 50px;
+	display: block;
+	position: absolute;
+	width: 100%;
+	z-index: 20; /*pasarlo al nav*/
+	font-size: 0.85rem;
+
+}
+
+
+.btn-nav{
+	/*btns top and bottom in header*/
+	width: 150px;
+	margin-left: 30px;
+	font-size: 0.85rem;
+}
+
+.link-pages{
+	/*links to pages 1-2-3 in header*/
+	/*border: 2px solid red ;*/
+
+	margin-left: 35px;
+	color: #f8f9fa; /*bootstrap light color*/
+
+}
+
+
+.link-pages:hover{	
+	color: #b2b6ba; /*From Bootstrap */
+
+}
+
+.gobottom-container{
+	border: 1px solid green;
+	position: absolute;
+	bottom: 50px;
+	width: 100%;
+	text-align: center;
+	z-index: 20; /*Pasarlo al hijo*/
+}
+
+.gobottom-container a {
+	padding: .8rem 3rem; /*Bootstrap overwrite*/
+	color: white;
+	background-color: rgb(71, 48, 161);
+	font-size: 0.9rem;
+	font-weight: bold;
+}
