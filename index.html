@@ -55,7 +55,24 @@
 				<div class="gobottom-container">
 					<a class="btn btn-lg text-light btn-gobottom" role="button">Go to bottom</a>
 				</div>
-				<div class="cont-item carousel-item active" data-interval="200000">
+
+				<div class="render-sliders">
+					<script id="slider-template" type="text/x-handlebars-template">
+						{{#each sliders}}
+						<div class="cont-item carousel-item">
+							<img id="img_slide1" src="{{this.image}}" class="d-block w-100" alt="...">
+							<div class="carousel-caption d-none d-md-block">
+								<div class="cont-caption">
+									<h1 id="title_slide1">{{this.title}}</h1>
+									<p id="content_slide1">{{this.text}}</p>
+								</div>				
+							</div>		
+						</div>
+						{{/each}}
+					</script>
+				</div>
+
+				<!-- <div class="cont-item carousel-item active" data-interval="200000">
 					<img id="img_slide1" src="" class="d-block w-100" alt="...">
 					<div class="carousel-caption d-none d-md-block">
 						<div class="cont-caption">
@@ -64,6 +81,7 @@
 						</div>				
 					</div>		
 				</div>
+
 				<div class=" cont-item carousel-item">
 					<img id="img_slide2" src="" class="d-block w-100" alt="...">
 					<div class="carousel-caption d-none d-md-block">
@@ -73,6 +91,7 @@
 						</div>
 					</div>
 				</div>
+
 				<div class="cont-item carousel-item">
 					<img id="img_slide3" src="" class="d-block w-100" alt="...">
 					<div class="carousel-caption d-none d-md-block">
@@ -81,7 +100,8 @@
 							<p id="content_slide3"></p>
 						</div>
 					</div>
-				</div>
+				</div> -->
+
 			</div>
 			<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
 				<i id="play-left" class="material-icons md-60">play_circle_outline</i>
@@ -98,6 +118,7 @@
 			<h1 class="page-title text-center text-light">PAGE 1 <b>CHECK FIELDS</b></h1>
 			<!-- form -->
 			<div class="row content-page">
+
 				<div class="input-container col-md-6 col-lg-4">
 					<div class="form-content">
 						<label for="select" class="text-light"><b>QUESTION 1...</b></label>
@@ -111,6 +132,7 @@
 						</div>
 					</div>	
 				</div>
+
 				<div class="input-container col-md-6 col-lg-4">
 					<div class="form-content">
 						<label for="select" class="text-light"><b>QUESTION 2...</b></label>
@@ -271,6 +293,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	<!-- handlebars -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.min.js"></script>
 	<!-- js files -->
 	<script src="js/app.js" type="text/javascript"></script>
 </body>
