@@ -291,3 +291,37 @@ Colors:
 		padding: 35px 20px;
 	}
 	
+	/* --------section Page 4 (Thank you page)--------------*/
+
+
+	section#page4{
+		background-color: #5E2697;
+		height:100vh;
+	}
+
+	.thanks-page{
+		position: relative;
+		border: 3px solid black;
+		height: 100%;
+		/*border: 1px solid black;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;*/
+	}
+
+	.thanks-page h1 {
+		border: 1px solid white;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		/*transform: translateY(-50%);*/
+		/*-ms-transform: scaleX(-50%); 
+		-webkit-transform: scaleX(-50%); */
+	}
+
+	.goBtn-page4{
+		position: absolute;
+		bottom: 0;
+	}
