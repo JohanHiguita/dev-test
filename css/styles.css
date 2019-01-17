@@ -1,7 +1,8 @@
 /* 
 Colors:
-	dark purple: #542584
-	light pruple: #5E2697;
+	pg1: #5E2697;
+	pg2: #512182; (goBtn)
+	pg3: #431B6C; 
 	*/
 
 	body {
@@ -9,7 +10,7 @@ Colors:
 	}
 
 	.material-icons.md-60 { 
-	/*next/previous in slider*/
+		/*next/previous in slider*/
 		font-size: 60px; 
 	}
 
@@ -77,6 +78,7 @@ Colors:
 	}
 
 	.gobottom-container{
+		/*For the slider only*/
 		border: 1px solid green;
 		position: absolute;
 		bottom: 50px;
@@ -85,14 +87,47 @@ Colors:
 		z-index: 20; /*Pasarlo al hijo*/
 	}
 
-	.gobottom-container a {
+	/*Sections Pages (Common)*/
+
+	.container-page{
+		/*Allow '.pageX-title' has a top-margin with respect to this*/
+		padding: 1px; 
+	}
+
+	.page-title{
+		border: 1px solid white;
+		margin-top: 100px;
+	}
+
+	.content-page{
+		border: 1px solid blue;
+		margin-top: 70px;
+	}
+
+	.gobottom-container-pages{
+		border: 1px solid green;
+		/*position: absolute;*/
+		/*bottom: 50px;*/
+		width: 100%;
+		text-align: center;
+		padding-top: 60px;
+		padding-bottom: 50px;  
+	}
+
+	.btn-gobottom {
 		padding: .8rem 3rem; /*Bootstrap overwrite*/
 		color: white;
-		background-color: #542584;
-
 		font-size: 0.9rem;
 		font-weight: bold;
+		background-color: #542584;
+		/*inset shadow, outset shadow*/
+		-webkit-box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.3),0px 1px 1px 1px rgba(67,27,108,1) ;
+		-moz-box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.3), 0px 1px 1px 1px rgba(67,27,108,1);
+		box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.3), 0px 1px 1px 1px rgba(67,27,108,1);
+		
 	}
+
+
 
 	/* --------section Page 1--------------*/
 
@@ -100,20 +135,7 @@ Colors:
 		background-color: #5E2697;
 	}
 
-	.container-page1{
-		/*Allow '.page1-title' has a top-margin with respect to this*/
-		padding: 1px; 
-	}
-
-	.page1-title{
-		border: 1px solid white;
-		margin-top: 100px;
-	}
-
-	.form-page1{
-		border: 1px solid blue;
-		margin-top: 70px;
-	}
+	
 
 	.input-container{
 		border: 1px solid yellow;
@@ -226,21 +248,12 @@ Colors:
 		display: block;
 	}
 
-	.gobottom-container-pages{
-		border: 1px solid green;
-		/*position: absolute;*/
-		/*bottom: 50px;*/
-		width: 100%;
-		text-align: center;
-		padding-top: 60px;
-		padding-bottom: 50px;  
-	}
 
-	.gobottom-container-pages a {
-		padding: .8rem 3rem; /*Bootstrap overwrite*/
-		color: white;
+
+	/* --------section Page 2--------------*/
+
+	section#page2{
 		background-color: #542584;
-
-		font-size: 0.9rem;
-		font-weight: bold;
 	}
+
+	
