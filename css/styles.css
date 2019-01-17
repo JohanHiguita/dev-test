@@ -256,4 +256,38 @@ Colors:
 		background-color: #542584;
 	}
 
+	/* --------section Page 3--------------*/
+
+	section#page3{
+		background-color: #431B6C;
+	}
+
+	.container-card{
+		border: 3px solid red;
+	}
+
+	.card{
+		/*border: 3px solid red;*/
+		width: 370px !important;  /*original img width*/
+		padding: 0;
+		border-radius: 0;
+		border: 0;
+		/*margin: auto; set in media queries*/
+	}
+	
+	.card-img-top {
+		/*width: 200px;*/
+		width: 100%;
+		border-radius: 0;
+	}
+
+	.card-text{
+		text-align: center;
+		color: rgba(94,38,135,0.5);
+
+	}
+	
+	.card-body{
+		padding: 35px 20px;
+	}
 	
