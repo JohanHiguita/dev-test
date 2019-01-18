@@ -24,6 +24,7 @@ Colors:
 		/*slider's content smaller*/
 		.content_slide {
 			font-size: 0.8rem;
+
 		}
 
 
@@ -99,7 +100,8 @@ Colors:
 		justify-content: center;
 		align-items: center;
 		height: 100%;
-
+		align-items:stretch; /*IE not overflow text*/
+	
 	}
 
 	.cont-item {
@@ -375,6 +377,7 @@ Colors:
 	
 	/* --------section Page 4 (Thank you page)--------------*/
 
+	
 
 	section#page4{
 		background-color: #5E2697;
@@ -407,3 +410,5 @@ Colors:
 		position: absolute;
 		bottom: 0;
 	}
+
+
