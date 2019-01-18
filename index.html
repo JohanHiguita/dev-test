@@ -9,8 +9,8 @@
 	<!-- Open sans font -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-	rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	<!-- css files -->
 	<link rel="stylesheet" href="css/styles.css">
 
@@ -23,11 +23,12 @@
 
 				<div class="navbar-container">
 
-					<div class="container">
-						<nav class="navbar navbar-expand-lg">
+					<div class="container inner-navbar">
+						<nav class="navbar navbar-expand-md">
 
 							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-								<span class="navbar-toggler-icon"></span>
+								<!-- <span class="navbar-toggler-icon">XXXX</span> -->
+								<i class="fas fa-bars"></i>
 							</button>
 							
 							<div class="collapse navbar-collapse " id="navbarNav">
@@ -59,9 +60,9 @@
 				<div class="render-sliders">
 					<script id="slider-template" type="text/x-handlebars-template">
 						{{#each sliders}}
-						<div class="cont-item carousel-item">
+						<div class="cont-item carousel-item" data-interval="4000">
 							<img id="img_slide1" src="{{this.image}}" class="d-block w-100" alt="...">
-							<div class="carousel-caption d-none d-md-block">
+							<div class="carousel-caption d-md-block">
 								<div class="cont-caption">
 									<h1 class="title_slide">{{toUpperCase this.title}}</h1>
 									<p class="content_slide">{{this.text}}</p>
@@ -190,11 +191,11 @@
 			<h1 class="page-title text-center text-light">PAGE 2 <b>TEXT</b></h1>
 			<!-- text -->
 			<div class="row content-page text-light">
-				<div class="col-md-6">
+				<div class="col-md-6 cont-text">
 					<p>Nunc euismod lorem eu ligula eleifend lacinia. Morbi blandit metus ac magna bibendum euismod. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed lobortis turpis ut tellus laoreet, id placerat enim convallis. Integer hendrerit ligula nunc, rhoncus aliquam libero feugiat viverra. Phasellus quis ligula lacus. Suspendisse sed dictum lorem, ac blandit massa. Aliquam gravida dui ut lobortis semper. Sed rutrum, nisl et malesuada feugiat, libero eros tempor elit, ac auctor erat lorem eget mauris. Sed ornare orci eget ante suscipit vulputate.</p>
 					<p>Maecenas posuere convallis urna non luctus. Curabitur sodales laoreet dui et tincidunt. Fusce vehicula nec neque vitae efficitur. Nullam porta urna vel accumsan aliquam. Quisque sit amet gravida augue. Curabitur non consectetur leo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin mauris erat, fermentum sit amet molestie eget, fringilla vitae elit. Donec ultricies tellus eu augue tincidunt sodales. Curabitur at elit eu eros porta consequat a in ante.</p>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-6 cont-text">
 					<p>Cras a ultricies quam, non sagittis risus. Sed auctor, purus in tincidunt vulputate, nisl erat consequat mi, id ultrices arcu ex eget magna. Sed pharetra purus est, elementum consectetur ante varius sed. Proin vitae sapien facilisis turpis consequat maximus vitae non arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur vitae consequat tortor, vel vestibulum neque. Nam maximus elit erat, quis feugiat turpis gravida sit amet.</p>
 					<p>Nulla finibus sed augue eget ultrices. Cras tristique dolor sed augue ornare, non pulvinar urna pellentesque. Aenean auctor eleifend hendrerit. Proin convallis accumsan sem, quis ultricies neque viverra nec. Donec congue, tellus in vehicula elementum, libero dolor mollis turpis, at cursus est elit semper neque. Sed ac ipsum et libero placerat porttitor. Suspendisse eget elit vitae nibh porttitor ultrices ut a diam. Duis augue mauris, elementum fermentum fermentum et, varius eu augue. Phasellus egestas orci ut dictum ornare.</p>
 				</div>
@@ -242,21 +243,12 @@
 
 	<section id="page4" class="page4">
 		<div class="container container-page thanks-page">
-			<h1 class="text-center text-light">THANK <b>YOU</b></h1>
+			<h1 class="text-center text-light">THANK <b>YOU</b></h1>	
 			<div class="gobottom-container-pages goBtn-page4">
 				<a class="btn btn-lg text-light btn-gobottom" href="#header" role="button">Go to header</a>
 			</div>
 		</div>
 	</section>
-
-
-
-
-
-
-
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
-
 
 	<!-- jQuery and Bootstrap 4 -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
