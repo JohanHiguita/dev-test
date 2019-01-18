@@ -49,9 +49,13 @@ Colors:
 		display: block;
 		position: absolute;
 		width: 100%;
-		z-index: 20; /*pasarlo al nav*/
+		
 		font-size: 0.85rem;
 
+	}
+	#navbarNav{
+		
+		z-index: 20; /*pasarlo al nav*/
 	}
 
 
@@ -84,10 +88,16 @@ Colors:
 		bottom: 50px;
 		width: 100%;
 		text-align: center;
-		z-index: 20; /*Pasarlo al hijo*/
+		z-index: 1; /*same level than next/previos slider btns*/ 
 	}
 
+
+
 	/*Sections Pages (Common)*/
+
+	.page-title, .title_slide{
+		font-size: 3rem;
+	}
 
 	.container-page{
 		/*Allow '.pageX-title' has a top-margin with respect to this*/
