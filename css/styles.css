@@ -47,6 +47,7 @@ Colors:
 			position: relative !important;
 			top: 0px !important;
 			background-color: #5E2697;
+			z-index: 10;
 		}
 		
 		.navbar-toggler{
