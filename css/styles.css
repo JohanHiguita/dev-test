@@ -24,10 +24,7 @@ Colors:
 		/*slider's content smaller*/
 		.content_slide {
 			font-size: 0.8rem;
-
 		}
-
-
 	}
 
 	@media (max-width: 768px) {
@@ -37,12 +34,10 @@ Colors:
 		.title_slide{
 			font-size: 1.7rem !important;
 		}
-
 		/*hide "go bottom" in slider*/
 		.gobottom-container{
 			display: none;
 		}
-
 		/* set the nav in top (with toggler)*/
 		.navbar-container{
 			position: relative !important;
@@ -50,7 +45,6 @@ Colors:
 			background-color: #5E2697;
 			z-index: 10;
 		}
-		
 		.navbar-toggler{
 			color: black !important;
 			background-color: #5E2697;
@@ -68,22 +62,13 @@ Colors:
 		}
 
 		.card{
-			width: 100% !important;
+			width: 70% !important;
+			margin: auto;
 
 		}
 		.card1, .card2 {
 			margin-bottom: 30px;	
 		}
-
-	}
-
-	.navbar-container{
-		border: 1px solid yellow;
-		
-	}
-
-	.navbar{
-		border: 1px solid pink;
 	}
 
 	body {
@@ -96,29 +81,24 @@ Colors:
 	}
 
 	#play-left{
+	/*invert Left slider*/ 
 		-ms-transform: scaleX(-1); /* IE 9 */
 		-webkit-transform: scaleX(-1); /* Safari 3-8 */
 		transform: scaleX(-1);
 	}
 
 	.cont-caption {
-		border: 2px solid red;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		height: 100%;
 		align-items:stretch; /*IE not overflow text*/
-	
-	}
-
-	.cont-item {
-		border: 2px solid blue;
 	}
 
 	.carousel-caption {
-		border: 1px solid yellow;
-		top: 50%;
+		/*centered in slider*/
+		top: 50%; 
 		transform: translateY(-50%);
 		-ms-transform: scaleX(-50%); /* IE 9 */
 		-webkit-transform: scaleX(-50%); /* Safari 3-8 */
@@ -126,20 +106,16 @@ Colors:
 
 
 	.navbar-container{
-		border: 1px solid red;
 		top: 50px;
 		display: block;
 		position: absolute;
 		width: 100%;
-		
 		font-size: 0.85rem;
 
 	}
 	#navbarNav{
-		
 		z-index: 20; /*pasarlo al nav*/
 	}
-
 
 	.btn-nav{
 		/*btns top and bottom in header*/
@@ -150,29 +126,22 @@ Colors:
 
 	.link-pages{
 		/*links to pages 1-2-3 in header*/
-		/*border: 2px solid red ;*/
-
 		margin-left: 35px;
 		color: #f8f9fa; /*bootstrap light color*/
-
 	}
-
 
 	.link-pages:hover{	
 		color: #b2b6ba; /*From Bootstrap */
-
 	}
 
 	.gobottom-container{
 		/*For the slider only*/
-		border: 1px solid green;
 		position: absolute;
 		bottom: 50px;
 		width: 100%;
 		text-align: center;
 		z-index: 1; /*same level than next/previos slider btns*/ 
 	}
-
 
 
 	/*Sections Pages (Common)*/
@@ -187,19 +156,14 @@ Colors:
 	}
 
 	.page-title{
-		border: 1px solid white;
 		margin-top: 100px;
 	}
 
 	.content-page{
-		border: 1px solid blue;
 		margin-top: 70px;
 	}
 
 	.gobottom-container-pages{
-		border: 1px solid green;
-		/*position: absolute;*/
-		/*bottom: 50px;*/
 		width: 100%;
 		text-align: center;
 		padding-top: 60px;
@@ -219,25 +183,16 @@ Colors:
 		
 	}
 
-
-
 	/* --------section Page 1--------------*/
 
 	section#page1{
 		background-color: #5E2697;
 	}
 
-	
-
-	.input-container{
-		border: 1px solid yellow;
-	}
-
-	.custom-dropdown::after {
+	/*.custom-dropdown::after {
 		content: "\25BC";
 		color: red;
-	}
-
+	}*/
 
 	.select {
 		/*Combobox from: https://codepen.io/michmy/pen/jBQQpp*/
@@ -246,13 +201,11 @@ Colors:
 		/*margin-bottom: 15px;*/
 		width: 150px;
 		/*border: 1px solid red;*/
-
 	}
 	
 
 	.select-input {
 		/*Combobox from: https://codepen.io/michmy/pen/jBQQpp*/
-
 		display: inline-block;
 		width: 100%;
 		cursor: pointer;
@@ -274,13 +227,11 @@ Colors:
 		-webkit-border-radius: 5px;
 		-moz-border-radius: 5px;
 		border-radius: 5px;
-
-		
 	}
 	
 	.select-input::-ms-expand{
 		/*Combobox from: https://codepen.io/michmy/pen/jBQQpp*/
-		display: none;
+		display: none; /*hide default content*/
 	}
 
 	.select-input:hover, .select-input:focus{
@@ -303,16 +254,10 @@ Colors:
 	}
 
 	.form-content{
-		border: 3px solid green;
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
 		margin-bottom: 30px;
-
-	}
-
-	option span{
-		text-align: center;
 	}
 
 	.console{
@@ -329,10 +274,8 @@ Colors:
 	}
 
 	.instructions{
-		border: 2px solid black;
 		margin-top: 25px;
 		font-weight: 300;
-
 	}
 
 	.instructions span{
@@ -354,12 +297,7 @@ Colors:
 		background-color: #431B6C;
 	}
 
-	.container-card{
-		border: 3px solid red;
-	}
-
 	.card{
-		/*border: 3px solid red;*/
 		width: 30%;  
 		padding: 0;
 		border-radius: 0;
@@ -385,7 +323,6 @@ Colors:
 	
 	/* --------section Page 4 (Thank you page)--------------*/
 
-	
 
 	section#page4{
 		background-color: #5E2697;
@@ -394,24 +331,16 @@ Colors:
 
 	.thanks-page{
 		position: relative;
-		border: 3px solid black;
 		height: 100%;
-		/*border: 1px solid black;
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;*/
 	}
 
 	.thanks-page h1 {
-		border: 1px solid white;
+		/*centered*/
 		position: absolute;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		/*transform: translateY(-50%);*/
-		/*-ms-transform: scaleX(-50%); 
-		-webkit-transform: scaleX(-50%); */
+
 	}
 
 	.goBtn-page4{
